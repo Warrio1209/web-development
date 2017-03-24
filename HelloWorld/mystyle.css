@@ -1,0 +1,19 @@
+.header{
+	background: #ffcccc;
+	position: fixed;
+	width: 100%;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	margin: 0px 0px 0px 0px;
+	z-index: 1;
+	text-align: center;
+}
+
+.content{
+	
+}
+
+#scared{
+	transform: rotate(180deg);
+}
