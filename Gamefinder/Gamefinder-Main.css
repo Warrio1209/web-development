@@ -1,0 +1,51 @@
+.dashboard{
+	padding-top: 7.5%; 
+}
+
+.game-box h1{
+	font-size: 200%;
+}
+
+.game-box{
+	margin-left:6%;
+	margin-right:6%;
+	text-align:center;
+	width: 20%;
+	height: 60vh;
+	position:relative;
+	background: linear-gradient(-180deg,#42f495,#41f4a9);
+}
+
+.game-tile{
+	background:#41f468;
+	width:90%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 2em;
+}
+
+#suggested-games{
+	float:left;
+	overflow-y: scroll;
+}
+
+#current-games{
+	display:inline-block;
+	overflow-y: scroll;
+}
+
+#create-game{
+	float:right;
+}
+
+#create-game-form{
+	float:right;
+	display: inline-block;
+	text-align: left;
+	padding: 10%;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}

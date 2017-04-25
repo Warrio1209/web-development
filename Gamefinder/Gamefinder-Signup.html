@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Gamefinder Sign Up</title>
+        <link rel = "stylesheet" type = "text/css" href = "reset.css">
+		<link rel = "stylesheet" type = "text/css" href = "Gamefinder-Signup.css">
+		<script src = "Gamefinder-Signup.js"></script>
+    </head>
+    <body>
+		<div class = "wrapper">
+			<div class = "signup">
+				<h1>Gamefinder</h1>
+				<form id = "signup-form" name = "signup-form" onsubmit = "return validateSignupForm()" action = "Gamefinder-Login.html">
+					<div class = "fields">
+						<p>Email:</p>
+						<input type = "email" name = "email-field" required>
+						<p>User Name:</p>
+						<p class = "invalid-input-msg" id = "invalid-username"></p>
+						<input type = "text" name = "username-field" required>
+						<p>First Name:</p>
+						<p class = "invalid-input-msg" id = "invalid-firstname"></p>
+						<input type = "text" name = "firstname-field" required>
+						<p>Last Name:</p>
+						<p class = "invalid-input-msg" id = "invalid-lastname"></p>
+						<input type = "text" name = "lastname-field" required>
+						<p>Password:</p>
+						<p class = "invalid-input-msg" id = "invalid-password"></p>
+						<input type = "password" name = "password-field" required><br>
+						<p>Confirm Password:</p>
+						<p class = "invalid-input-msg" id = "password-mismatch"></p>
+						<input type = "password" name = "confirmpassword-field" required><br>
+					</div>
+					<input type = "submit" value = "Sign Up" id= "submit">
+				</form>
+			</div>
+		</div>
+    </body>
+</html>
+

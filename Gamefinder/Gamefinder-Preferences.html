@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="UTF-8">
+	<title>Gamefinder</title>
+    <link rel = "stylesheet" type = "text/css" href = "reset.css">
+	<link rel = "stylesheet" type = "text/css" href = "Gamefinder-Header.css">
+	<link rel = "stylesheet" type = "text/css" href = "Gamefinder-Preferences.css">
+	<script type = "text/javascript" src = "Gamefinder-Preferences.js"></script>
+	<script type = "text/javascript" src = "Gamefinder-Footer.js"></script>
+</head>
+<body onload = "updateFooterTimeSince()">
+	<div class = "header">
+		<div class = "header-mid">
+			<a href = "Gamefinder-Landing.html">Gamefinder</a>
+		</div>
+		<div class = header-right>
+			<ul>
+				<li><a href = "Gamefinder-Landing.html">Sign Out</a></li>
+				<li><a href = "Gamefinder-Login.html">Change User</a></li>
+				<li><a href = "Gamefinder-Available.html">Edit Profile</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class = "content">
+		<h1>Select the games you are interested in from the lists below</h1>
+		<form id = "dropdown" action = "Gamefinder-Main.html">
+			<div class = "top-option">
+				<div class = "dropdown-content"><h3>Card Games</h3></div>
+				<div class = "dropdown-checkbox"><input type = "checkbox" name = "preferences" value = "card-games"></div>
+				<div class = "sub-option">
+					<div class = "dropdown-content"><h3>Modern Card Games</h3></div>
+					<div class = "dropdown-checkbox"><input type = "checkbox" name = "preferences" value = "modern-card-games"></div>
+					<div class = "sub-option">
+						<div class = "dropdown-content"><h3>Coup</h3></div>
+						<div class = "dropdown-checkbox"><input type = "checkbox" name = "preferences" value = "coup"></div>
+					</div>
+					<div class = "sub-option">
+						<div class = "dropdown-content"><h3>Dominion</h3></div>
+						<div class = "dropdown-checkbox"><input type = "checkbox" name = "preferences" value = "dominion"></div>
+					</div>
+					<div class = "sub-option">
+						<div class = "dropdown-content"><h3>Munchkin</h3></div>
+						<div class = "dropdown-checkbox"><input type = "checkbox" name = "preferences" value = "munchkin"></div>
+					</div>
+					<div class = "sub-option">
+						<div class = "dropdown-content"><h3>Exploding Kittens</h3></div>
+						<div class = "dropdown-checkbox"><input type = "checkbox" name = "preferences" value = "exploding-kittens"></div>
+					</div>
+					<div class = "sub-option">
+						<div class = "dropdown-content"><h3>Werewolf</h3></div>
+						<div class = "dropdown-checkbox"><input type = "checkbox" name = "preferences" value = "werewolf"></div>
+					</div>
+				</div>
+				<div class = "sub-option">
+					<div class = "dropdown-content"><h3>Traditional Card Games</h3></div>
+					<div class = "dropdown-checkbox"><input type = "checkbox" name = "preferences" value = "modern-card-games"></div>
+					<div class = "sub-option">
+						<div class = "dropdown-content"><h3>500</h3></div>
+						<div class = "dropdown-checkbox"><input type = "checkbox" name = "preferences" value = "500"></div>
+					</div>
+					<div class = "sub-option">
+						<div class = "dropdown-content"><h3>Bridge</h3></div>
+						<div class = "dropdown-checkbox"><input type = "checkbox" name = "preferences" value = "Bridge"></div>
+					</div>
+					<div class = "sub-option">
+						<div class = "dropdown-content"><h3>Poker</h3></div>
+						<div class = "dropdown-checkbox"><input type = "checkbox" name = "preferences" value = "poker"></div>
+					</div>
+					<div class = "sub-option">
+						<div class = "dropdown-content"><h3>Whist</h3></div>
+						<div class = "dropdown-checkbox"><input type = "checkbox" name = "preferences" value = "whist"></div>
+					</div>
+					<div class = "sub-option">
+						<div class = "dropdown-content"><h3>Hearts</h3></div>
+						<div class = "dropdown-checkbox"><input type = "checkbox" name = "preferences" value = "hearts"></div>
+					</div>
+				</div>
+				<div class = "sub-option">
+					<div class = "dropdown-content"><h3>Collectible Card Games</h3></div>
+					<div class = "dropdown-checkbox"><input type = "checkbox" name = "preferences" value = "modern-card-games"></div>
+					<div class = "sub-option">
+						<div class = "dropdown-content"><h3>Magic The Gathering</h3></div>
+						<div class = "dropdown-checkbox"><input type = "checkbox" name = "preferences" value = "magic-the-gathering"></div>
+					</div>
+					<div class = "sub-option">
+						<div class = "dropdown-content"><h3>Yugioh</h3></div>
+						<div class = "dropdown-checkbox"><input type = "checkbox" name = "preferences" value = "yugioh"></div>
+					</div>
+					<div class = "sub-option">
+						<div class = "dropdown-content"><h3>Android Netrunner</h3></div>
+						<div class = "dropdown-checkbox"><input type = "checkbox" name = "preferences" value = "android-netrunner"></div>
+					</div>
+					<div class = "sub-option">
+						<div class = "dropdown-content"><h3>Pokemon TCG</h3></div>
+						<div class = "dropdown-checkbox"><input type = "checkbox" name = "preferences" value = "pokemon-tcg"></div>
+					</div>
+					<div class = "sub-option">
+						<div class = "dropdown-content"><h3>World of Warcraft TCG</h3></div>
+						<div class = "dropdown-checkbox"><input type = "checkbox" name = "preferences" value = "world-of-warcraft-tcg"></div>
+					</div>
+				</div>
+			</div>
+			<div class = "top-option">
+				<div class = "dropdown-content"><h3>Board Games</h3></div>
+				<div class = "dropdown-checkbox"><input type = "checkbox" name = "preferences" value = "board-games"></div>
+				<div class = "sub-option">
+					<div class = "dropdown-content"><h3>Modern Board Games</h3></div>
+					<div class = "dropdown-checkbox"><input type = "checkbox" name = "preferences" value = "modern-board-games"></div>
+					<div class = "sub-option">
+						<div class = "dropdown-content"><h3>Dead of Winter</h3></div>
+						<div class = "dropdown-checkbox"><input type = "checkbox" name = "preferences" value = "dead-of-winter"></div>
+					</div>
+					<div class = "sub-option">
+						<div class = "dropdown-content"><h3>Risk</h3></div>
+						<div class = "dropdown-checkbox"><input type = "checkbox" name = "preferences" value = "risk"></div>
+					</div>
+					<div class = "sub-option">
+						<div class = "dropdown-content"><h3>Agricola</h3></div>
+						<div class = "dropdown-checkbox"><input type = "checkbox" name = "preferences" value = "agricola"></div>
+					</div>
+					<div class = "sub-option">
+						<div class = "dropdown-content"><h3>Splendour</h3></div>
+						<div class = "dropdown-checkbox"><input type = "checkbox" name = "preferences" value = "splendour"></div>
+					</div>
+					<div class = "sub-option">
+						<div class = "dropdown-content"><h3>King of New York</h3></div>
+						<div class = "dropdown-checkbox"><input type = "checkbox" name = "preferences" value = "king-of-new-york"></div>
+					</div>
+					<div class = "sub-option">
+						<div class = "dropdown-content"><h3>A Game of Thrones Board Game</h3></div>
+						<div class = "dropdown-checkbox"><input type = "checkbox" name = "preferences" value = "game-of-thrones"></div>
+					</div>
+				</div>
+				<div class = "sub-option">
+					<div class = "dropdown-content"><h3>Traditional Board Games</h3></div>
+					<div class = "dropdown-checkbox"><input type = "checkbox" name = "preferences" value = "traditional-board-games"></div>
+					<div class = "sub-option">
+						<div class = "dropdown-content"><h3>Chess</h3></div>
+						<div class = "dropdown-checkbox"><input type = "checkbox" name = "preferences" value = "chess"></div>
+					</div>
+					<div class = "sub-option">
+						<div class = "dropdown-content"><h3>Go</h3></div>
+						<div class = "dropdown-checkbox"><input type = "checkbox" name = "preferences" value = "go"></div>
+					</div>
+					<div class = "sub-option">
+						<div class = "dropdown-content"><h3>Backgammon</h3></div>
+						<div class = "dropdown-checkbox"><input type = "checkbox" name = "preferences" value = "backgammon"></div>
+					</div>
+					<div class = "sub-option">
+						<div class = "dropdown-content"><h3>Checkers</h3></div>
+						<div class = "dropdown-checkbox"><input type = "checkbox" name = "preferences" value = "checkers"></div>
+					</div>
+				</div>
+				<div class = "sub-option">
+						<div class = "dropdown-content"><h3>Goats and Tigers</h3></div>
+						<div class = "dropdown-checkbox"><input type = "checkbox" name = "preferences" value = "Goats and Tigers"></div>
+					</div>
+				<div class = "sub-option">
+					<div class = "dropdown-content"><h3>Wargaming</h3></div>
+					<div class = "dropdown-checkbox"><input type = "checkbox" name = "preferences" value = "wargaming"></div>
+					<div class = "sub-option">
+						<div class = "dropdown-content"><h3>Warhammer 40k</h3></div>
+						<div class = "dropdown-checkbox"><input type = "checkbox" name = "preferences" value = "warhammer-40k"></div>
+					</div>
+					<div class = "sub-option">
+						<div class = "dropdown-content"><h3>Warhammer Fantasy</h3></div>
+						<div class = "dropdown-checkbox"><input type = "checkbox" name = "preferences" value = "warhammer-fantasy"></div>
+					</div>
+					<div class = "sub-option">
+						<div class = "dropdown-content"><h3>Age of Sigmar</h3></div>
+						<div class = "dropdown-checkbox"><input type = "checkbox" name = "preferences" value = "age-of-sigmar"></div>
+					</div>
+					<div class = "sub-option">
+						<div class = "dropdown-content"><h3>Battletech</h3></div>
+						<div class = "dropdown-checkbox"><input type = "checkbox" name = "preferences" value = "battletech"></div>
+					</div>
+					<div class = "sub-option">
+						<div class = "dropdown-content"><h3>Warmahordes</h3></div>
+						<div class = "dropdown-checkbox"><input type = "checkbox" name = "preferences" value = "warmahordes"></div>
+					</div>
+				</div>
+			</div>
+			<div class = "top-option">
+				<div class = "dropdown-content"><h3>Roleplaying</h3></div>
+				<div class = "dropdown-checkbox"><input type = "checkbox" name = "preferences" value = "roleplaying"></div>
+				<div class = "sub-option">
+					<div class = "dropdown-content"><h3>Campaigns</h3></div>
+					<div class = "dropdown-checkbox"><input type = "checkbox" name = "preferences" value = "campaigns"></div>
+				</div>
+				<div class = "sub-option">
+					<div class = "dropdown-content"><h3>Oneshots</h3></div>
+					<div class = "dropdown-checkbox"><input type = "checkbox" name = "preferences" value = "Oneshots"></div>
+				</div>
+			</div>
+			<input type = "submit" id = "submit" value = "Next">
+		</form>
+	</div>
+	<footer>
+		<p id = "last-updated">Last Updated: 11:59PM 12/04/2017</p>
+		<p id = "author-statement">Website created by Callum Sullivan</p>
+		<p id = "time-since-last-update">Time since last update:<p>
+	</footer>
+	<!--<script>addEventListeners();</script> I tried to make a cascading dropdown menu bot for some reason the JS broke half way through, ran out of time and ended up going with static-->
+</body>

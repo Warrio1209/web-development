@@ -1,0 +1,83 @@
+form{
+	margin-top: 2%;
+	margin-left:auto;
+	margin-right:auto;
+	width: 40%;
+	text-align: center;
+}
+h1 {
+	margin-top: 1.5em;
+	text-align: center;
+	font-size: 300%;
+}
+
+.week{
+	display:table;
+	width: 100%;
+}
+.day{
+	display: table-cell;
+	vertical-align: middle;
+}
+.hour-container input{
+	width: 100%;
+	visibility:hidden;
+}
+
+.clicked-hour-container input{
+	width: 100%;
+	visibility:hidden;
+}
+
+.hour-titles{
+	padding-top: 2em;
+	width:12.5%;
+	display:table-cell;
+}
+
+.hour-titles p{
+	margin-bottom: .63em;
+}
+
+.hour-container{
+	width: 100%;
+	background: #588fe8; 
+	background: -webkit-linear-gradient(left, #588fe8 , #5f80b5); 
+	background: -o-linear-gradient(right, #588fe8, #5f80b5); 
+	background: -moz-linear-gradient(right, #588fe8, #5f80b5); 
+	background: linear-gradient(to right, #588fe8 , #5f80b5); 
+	border-style:double;
+	border-color: white;
+	border-width: 1px;
+	text-align: center;
+	height: 1.5em;
+	width:100%;
+}
+
+.clicked-hour-container{
+	width: 100%;
+	background: #0000cc; 
+	background: -webkit-linear-gradient(left, #0000cc , #0000ff); 
+	background: -o-linear-gradient(right, #0000cc, #0000ff); 
+	background: -moz-linear-gradient(right, #0000cc, #0000ff); 
+	background: linear-gradient(to right, #0000cc , #0000ff); 
+	border-style:double;
+	border-color: white;
+	border-width: 1px;
+	text-align: center;
+	height: 1.5em;
+	width:100%;
+}
+
+#submit{
+	background-color: #41f468;
+	width:20%;
+	height: 2em;
+	font-size: 200%;
+	margin-top: 0.2em;
+}
+
+footer{
+	position: absolute;
+	bottom: 0;
+}

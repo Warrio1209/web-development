@@ -1,0 +1,79 @@
+.content{
+	width: 100%;
+	margin-top: 5em;
+	text-align:center;
+}
+
+.content h1{
+	font-size: 300%;
+	
+}
+
+#dropdown{
+	margin-top: 5%;
+	margin-left: auto;
+	margin-right: auto;
+	width: 60%;
+	text-align: center;
+}
+
+.top-option{
+	display: inline-block;
+	margin-left: 2%;
+	margin-right: 2%;
+	font-size: 200%;
+	background-color: #41f468;
+	width: 20%;
+	border-width: 1px;
+	border-style: solid;
+	font-size:0%;
+	vertical-align: top;
+}
+
+.sub-option{
+	display: inline-block;
+	background-color: #41f468;
+	width: 100%;
+	border-width: 1px;
+	border-style: solid;
+	position: relative;
+	left: -1px;
+	bottom: -1px;
+	height: -1em;
+}
+
+.dropdown-content{
+	float: left;
+	width: 80%;
+	padding: 0.5em;
+	font-size: 20px;
+}
+
+.dropdown-checkbox{
+	text-align:right;
+	display: inline-block;
+	float: right;
+	width: 10%;
+	padding: 0.5em;
+}
+
+.dropdown-checkbox input{
+	float: right;
+	display: inline-block;
+	position: relative;
+	top: 50%;
+	transform: translateY(50%);
+}
+
+.dropdown-content h3{
+	text-align: left;
+	display: inline-block;
+}
+
+#submit{
+	background-color: #41f468;
+	width:40%;
+	height: 2em;
+	font-size: 200%;
+	margin-top: 0.2em;
+}

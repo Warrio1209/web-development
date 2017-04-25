@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="UTF-8">
+	<title>Gamefinder</title>
+    <link rel = "stylesheet" type = "text/css" href = "reset.css">
+	<link rel = "stylesheet" type = "text/css" href = "Gamefinder-Header.css">
+	<link rel = "stylesheet" type = "text/css" href = "Gamefinder-Available.css">
+	<script type = "text/javascript" src = "Gamefinder-Available.js"></script>
+	<script type = "text/javascript" src = "Gamefinder-Footer.js"></script>
+</head>
+<body onload = "updateFooterTimeSince()">
+	<div class = "header">
+		<div class = "header-mid">
+			<a href = "Gamefinder-Landing.html">Gamefinder</a>
+		</div>
+		<div class = header-right>
+			<ul>
+				<li><a href = "Gamefinder-Landing.html">Sign Out</a></li>
+				<li><a href = "Gamefinder-Login.html">Change User</a></li>
+				<li><a href = "Gamefinder-Available.html">Edit Profile</a></li>
+			</ul>
+		</div>
+	</div>
+	<h1>Select the times you are at UWA and available to play</h1>
+	<div class = "weekdays"></div>
+	<form name = "week-planner" action = "Gamefinder-Preferences.html">
+		<div class = "week"></div>
+		<input type = "submit" id = "submit" value = "next">
+	</form>
+	    <footer>
+			<p id = "last-updated">Last Updated: 11:59PM 12/04/2017</p>
+			<p id = "author-statement">Website created by Callum Sullivan</p>
+			<p id = "time-since-last-update">Time since last update:<p>
+		</footer>
+	<script> populateWeekPlanner();</script>
+</body>
